@@ -1,0 +1,9 @@
+machine:
+  python:
+    version: 3.5.2
+
+test:
+  override:
+    - echo HelloWorld
+    - exit 0
+    - nosetests study01/fizzbuzz.py

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>jQueryの練習</title>
+    <style>
+    .myStyle {
+        font-weight: bold;
+        border: 1px solid gray;
+    }
+</style>
+</head>
+<body>
+
+  <p>jQueryの練習</p>
+  <ul id="main">
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3
+      <ul id="sub">
+          <li>3-0</li>
+          <li>3-1</li>
+          <li class="item">3-2</li>
+          <li class="item">3-3</li>
+          <li>3-4</li>
+      </ul>
+    </li>
+    <li>4</li>
+  </ul>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script>
+    //$(document).ready(function()) {
+    $(function() {
+          // セレクタ:処理対象となるDOM要素
+          // メソッド:処理
+          // メソッドチェーン
+          // セレクタ.メソッド
+          // id #main
+          // class .item
+          $('p').css('color','red').hide('slow')
+          $('#sub').css('color','red')
+          $("#sub .item").css('color','blue')
+
+
+    });
+    </script>
+</body>
+</html>

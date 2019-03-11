@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>first HTML</title>
+    <style>
+    /*  p{ color: orange; } */
+    </style>
+    <link rel="stylesheet" href="test.css"  </head>
+  <body>
+    <!--
+    form
+    action:どこに送るか
+    method:get or post
+  -->
+
+
+    <article>
+      <h1>アンケート</h1>
+      <form action="survey.php" method="post">
+        <p>メールアドレス:<input type="text" name="email01" size="50" maxlength="5" value="abc"></p>
+        <p>メールアドレス:<input type="text" name="email02" size="50" maxlength="5" placeholder="plz email"></p>
+        <p>パスワード<input type="password" name="password" size="50" maxlength="5" ></p>
+        <p><input type="submit" value="送信"></p>
+        <input type="hidden" name="user_id" value="23432">
+        <p><input type="radio" name="radio" value="red" />red</p>
+        <p><button type="button">処理をする</button></p>
+      </form>
+      <h>文字参照</h>
+      <p>「&lt;p&gt;タグを段落です」
+     <div>
+       <h1>TKG</h1>
+       <p id="first">id first</p>
+       <span class="points">span class points</span>
+       <p class="points">p.class points</p>
+       <span>span</span>
+     </div>
+
+     <p>
+      <a href="http://google.com">
+        google
+      </a>
+     </p>
+
+     <p>
+      <a href="http://yahoo.co.jp" title="yahoo" class="link">
+        yahoo
+      </a>
+
+
+     <ul>
+       <li>umai</li>
+       <li>umai</li>
+       <li>umai</li>
+     </ul>
+
+
+     first line<br>
+     second line
+
+     </p>
+     <a href="http://dotinstall.com"
+class="link search"
+id="site" style="color:green;">
+    Dotinstall
+     </a>
+
+    <div class=boxmodel>Boxmodel Element</div>
+
+    <div class=padding>
+      hello,hello,hello,
+
+    </div>
+
+    <p class="help">Help!</p>
+    <p class="dragme">Dragme!</p>
+    <p class="clickme">clickme</p>
+    <p class="smile">smile</p>
+
+
+
+    <div class="container">
+   <div class="row">
+     <div class="box gray">
+       Hello Hello Hello Hello Hello Hello
+     </div>
+     <div class="box silver">
+       Hello Hello Hello
+     </div>
+   </div>
+   <div class="row">
+     <div class="box orange">
+       Hello Hello Hello Hello Hello Hello
+     </div>
+     <div class="box gray">
+       Hello Hello Hello
+     </div>
+   </div>
+ </div>
+
+    </article>
+  </body>
+</html>

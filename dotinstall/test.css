@@ -1,0 +1,170 @@
+/*
+セレクタ { プロパティ名: 値;}
+セレクタ {
+プロパティ名: 値;
+プロパティ名: 値;
+}
+
+* ユニバーサルセレクタ
+要素名 p h1 div
+#id
+.class
+
+*/
+
+h1 { color: blue; }
+#first { color: blue; }
+p.points { color: violet; }
+span.points  { color: red; }
+span { color: green;}
+
+a[href="http://google.com"]{ color: orange;}
+a[title="yahoo"] { color: pink;}
+
+/*
+疑似class
+*/
+a:link { color: violet; }
+a:visited { color: orange; }
+a:hover { color: pink; }
+a:active { color: red; }
+
+input:focus { background: red;}
+
+/*
+疑似要素
+*/
+
+p:first-letter { color red; }
+
+p:before {
+  content: "-->"
+}
+p:after {
+  content: "<--"
+}
+
+/*
+セレクタ
+詳細度
+  (a) style=""
+  (b) id
+  (c) 属性/擬似クラス
+  (d) 要素/擬似要素
+*/
+
+/* 0, 0, 0, 1 */
+a { color: skyblue !important; }
+/* 0, 0, 1, 1 */
+a.link { color: pink; }
+/* 0, 0, 1, 1 */
+a.search { color: orange; }
+/* 0, 1, 0, 1 */
+a#site { color: blue; }
+
+/*
+値
+- 長さ
+ - px
+ - em
+ - %
+
+- 色
+  - red 0-f /00-ff/ 0 -255
+  - green
+  - blue
+*/
+
+body { font-size: 16px; }
+h1 { font-size; 2em;} /* 32px */
+h2 { font-size: 150%;} /* 24px */
+
+h1 { color: #0000ff;}
+
+
+/*
+ボックスモデル
+*/
+
+body,html { height: 100%;}
+div.boxmodel {
+  background: silver;
+  /* width: 200px; */
+  width: 20%;
+  /* height: 100px; */
+  height: 200%;
+}
+
+
+/*
+border-color:
+border-width
+border-stye: solid / dotted / dashed
+/ double / inset /outset
+
+*/
+
+div.boxmodel {
+  border: orange 4px dotted;
+
+}
+
+div.padding {
+  color: silver;
+  background: blue;
+  width: 20%;
+  padding: 10px 20px 40px;;
+  margin: 10px 20px 30px
+  font-size: 24px
+  font-family: Helvetica;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline line-through;
+}
+
+/*
+list
+- list-style-type: disc / circle /square / decimal
+*/
+
+ul {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+/*
+cursor
+*/
+
+.help { cursor: help; }
+.dragme { cursor: move; }
+.clickme { cursor: pointer; }
+.smile { cursor: url('smile.png'), auto; }
+
+
+body {
+  background-color: white;
+}
+
+h1, p, span, a {
+  border: 1px solid #ddd;
+}
+
+/*
+display: table
+*/
+
+.container {
+  display: table;
+  width: 300px;
+}
+.box {
+  display: table-cell;
+  width: 100px;
+}
+.row {
+  display: table-row;
+}
+.gray { background: gray; }
+.silver { background: silver; }
+.orange { background: orange; }
